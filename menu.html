@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>المنيو | عالسريع</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <button
+        class="back-btn"
+        onclick="location.href='index.html'"
+        data-i18n="back">
+
+        ← رجوع
+
+    </button>
+
+
+    <div
+        class="logo"
+        data-i18n="logo">
+
+        ⚡ عالسريع
+
+    </div>
+
+
+    <button
+        onclick="location.href='checkout.html'"
+        class="cart-btn">
+
+        🛒
+
+        <span id="cartCount">
+            0
+        </span>
+
+    </button>
+
+</header>
+
+
+
+<main class="container">
+
+
+    <section class="restaurant-header">
+
+        <img
+            id="restaurantImage"
+            src="images/restaurants/placeholder.jpg"
+            alt="restaurant">
+
+
+        <div>
+
+            <span id="restaurantType">
+                مطعم
+            </span>
+
+            <h1 id="restaurantName">
+                المنيو
+            </h1>
+
+            <p id="restaurantInfo">
+                ⭐ 4.5 • 25-35 دقيقة
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="menu-offer">
+
+        <div>
+
+            <span data-i18n="specialOffer">
+                🔥 عرض خاص
+            </span>
+
+            <h2 data-i18n="discount">
+                خصم 70 جنيه
+            </h2>
+
+            <p data-i18n="minimumOffer">
+                عند طلب المنتجات المطلوبة ووصول الطلب للحد الأدنى
+            </p>
+
+        </div>
+
+        <strong id="offerTimer">
+            30:00
+        </strong>
+
+    </section>
+
+
+
+    <h2
+        class="section-title"
+        data-i18n="menuTitle">
+
+        المنيو
+
+    </h2>
+
+
+    <section
+        id="menuGrid"
+        class="menu-grid">
+    </section>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

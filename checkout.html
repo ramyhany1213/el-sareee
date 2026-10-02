@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>إتمام الطلب | عالسريع</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+    <button
+        class="back-btn"
+        onclick="history.back()"
+        data-i18n="back">
+
+        ← رجوع
+
+    </button>
+
+
+    <div
+        class="logo"
+        data-i18n="checkoutTitle">
+
+        ⚡ إتمام الطلب
+
+    </div>
+
+
+    <button
+        onclick="location.href='index.html'"
+        class="cart-btn">
+
+        🏠
+
+        <span data-i18n="home">
+            الرئيسية
+        </span>
+
+    </button>
+
+</header>
+
+
+
+<main class="checkout-container">
+
+
+    <section class="checkout-box">
+
+        <h1 data-i18n="cartTitle">
+            🛒 طلبك
+        </h1>
+
+
+        <div id="cartItems">
+        </div>
+
+
+        <div class="total-box">
+
+            <div>
+
+                <span data-i18n="products">
+                    المنتجات
+                </span>
+
+                <strong id="productsTotal">
+                    0 جنيه
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span data-i18n="delivery">
+                    التوصيل
+                </span>
+
+                <strong id="deliveryTotal">
+                    0 جنيه
+                </strong>
+
+            </div>
+
+
+            <div class="grand-total">
+
+                <span data-i18n="total">
+                    الإجمالي
+                </span>
+
+                <strong id="cartTotal">
+                    0 جنيه
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="checkout-box">
+
+        <h2 data-i18n="deliveryInfo">
+            📍 بيانات التوصيل
+        </h2>
+
+
+        <form id="checkoutForm">
+
+
+            <label data-i18n="name">
+                الاسم
+            </label>
+
+            <input
+                id="customerName"
+                type="text"
+                data-i18n-placeholder="namePlaceholder"
+                placeholder="اكتب اسمك"
+                required>
+
+
+
+            <label data-i18n="phone">
+                رقم الموبايل
+            </label>
+
+            <input
+                id="customerPhone"
+                type="tel"
+                data-i18n-placeholder="phonePlaceholder"
+                placeholder="01xxxxxxxxx"
+                required>
+
+
+
+            <label data-i18n="area">
+                المنطقة
+            </label>
+
+            <select
+                id="area"
+                required>
+
+                <option
+                    value=""
+                    data-i18n="chooseArea">
+
+                    اختر المنطقة
+
+                </option>
+
+                <option
+                    value="mansoura"
+                    data-i18n="mansoura">
+
+                    المنصورة
+
+                </option>
+
+                <option
+                    value="talkha"
+                    data-i18n="talkha">
+
+                    طلخا
+
+                </option>
+
+                <option
+                    value="mitghamr"
+                    data-i18n="mitghamr">
+
+                    ميت غمر
+
+                </option>
+
+                <option
+                    value="aga"
+                    data-i18n="aga">
+
+                    أجا
+
+                </option>
+
+                <option
+                    value="sinbillawain"
+                    data-i18n="sinbillawain">
+
+                    السنبلاوين
+
+                </option>
+
+            </select>
+
+
+
+            <label data-i18n="address">
+                العنوان بالتفصيل
+            </label>
+
+            <textarea
+                id="address"
+                data-i18n-placeholder="addressPlaceholder"
+                placeholder="الشارع - رقم العمارة - الدور..."
+                required></textarea>
+
+
+
+            <label data-i18n="notes">
+                ملاحظات
+            </label>
+
+            <textarea
+                id="notes"
+                data-i18n-placeholder="notesPlaceholder"
+                placeholder="أي ملاحظات على الطلب؟"></textarea>
+
+
+
+            <button
+                class="confirm-btn"
+                type="submit"
+                data-i18n="complete">
+
+                إتمام الطلب ⚡
+
+            </button>
+
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>عالسريع | اطلب كل حاجة</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo" data-i18n="logo">
+        ⚡ عالسريع
+    </div>
+
+    <div class="header-actions">
+
+        <button
+            onclick="toggleLanguage()"
+            class="lang-btn"
+            data-i18n="language">
+            English
+        </button>
+
+        <button
+            onclick="location.href='checkout.html'"
+            class="cart-btn">
+
+            🛒
+            <span data-i18n="cart">السلة</span>
+
+            <span id="cartCount">0</span>
+
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1 data-i18n-html="heroTitle">
+            كل اللي محتاجه<br>
+            <span>عالسريع ⚡</span>
+        </h1>
+
+        <p data-i18n="heroSubtitle">
+            مطاعم • سوبرماركت • عروض • طلبات
+        </p>
+
+        <div class="search-box">
+
+            <span>🔎</span>
+
+            <input
+                id="searchInput"
+                type="text"
+                data-i18n-placeholder="search"
+                placeholder="ابحث عن مطعم أو سوبرماركت..."
+                oninput="searchStores()">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<main class="container">
+
+    <section class="offers">
+
+        <div class="offer-card">
+
+            <div>
+
+                <span data-i18n="todayOffer">
+                    🔥 عرض اليوم
+                </span>
+
+                <h2 data-i18n="discount">
+                    خصم 70 جنيه
+                </h2>
+
+                <p data-i18n="offerText">
+                    على طلبك عند الوصول للحد الأدنى
+                </p>
+
+            </div>
+
+            <strong data-i18n="endingSoon">
+                ينتهي قريبًا
+            </strong>
+
+        </div>
+
+
+        <div class="offer-card second">
+
+            <div>
+
+                <span data-i18n="quick">
+                    ⚡ عالسريع
+                </span>
+
+                <h2 data-i18n="fastDelivery">
+                    توصيل سريع
+                </h2>
+
+                <p data-i18n="choosePlace">
+                    اختار المكان وابدأ طلبك
+                </p>
+
+            </div>
+
+            <strong>
+                🚴
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <div class="categories">
+
+        <button
+            class="category active"
+            onclick="filterStores('all')"
+            data-i18n="all">
+            الكل
+        </button>
+
+        <button
+            class="category"
+            onclick="filterStores('restaurant')"
+            data-i18n="restaurants">
+            🍔 مطاعم
+        </button>
+
+        <button
+            class="category"
+            onclick="filterStores('supermarket')"
+            data-i18n="supermarkets">
+            🛒 سوبرماركت
+        </button>
+
+    </div>
+
+
+    <h2
+        class="section-title"
+        data-i18n="nearby">
+        الأماكن القريبة منك
+    </h2>
+
+
+    <section
+        id="storesGrid"
+        class="stores-grid">
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
